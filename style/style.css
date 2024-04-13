@@ -1,0 +1,117 @@
+
+    
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+    /* header styles*/
+    header{
+        background: white;
+        padding: 50px 200px ;
+    }
+
+    .header-tittle{
+        color: red;
+        font-size: 40px;
+        
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav > ul{
+        display: flex;        
+    }
+    nav li{
+        list-style: none;
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 1rem;
+    
+    }
+    nav li a{
+        text-decoration: none;
+    }
+
+    /*banner-styles*/
+    .banner-content{
+        max-width: 800px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .banner-tittle{
+        font-size: 4rem;
+    }
+    .btn-primary{
+        font-size: 20px;
+        padding: 20px 25px;
+        background-color: yellow;
+        border-radius: 8px;
+        border: none;
+       cursor: cell;
+    }
+    .btn-primary:hover{
+        color: white;
+        background-color: rebeccapurple;
+    }
+
+    .banner-image{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+   
+
+    /* response for small device*/
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+
+    nav  {
+        flex-direction: column;
+    }
+}
+
+/*response for medium device*/
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+
+    nav  {
+        flex-direction: column;
+    }
+}
+/*main style*/
+main{
+    width: 1440px;
+    margin: 0 auto;
+}
+/*teams style*/
+.feature-section{
+    display: flex;
+    align-items: center;
+   
+}
+
+.team-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.Team-contents{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+.feature-tittle{
+    font-size: 45px;
+}
+.t-content{
+    color: gray;
+    width: 700;
+}
+.t-feature{
+    color: orange;
+    width: 700;
+}
